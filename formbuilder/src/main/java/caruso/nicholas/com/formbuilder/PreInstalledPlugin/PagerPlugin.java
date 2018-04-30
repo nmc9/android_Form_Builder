@@ -14,18 +14,10 @@ import java.util.List;
 import caruso.nicholas.com.formbuilder.DataBox;
 import caruso.nicholas.com.formbuilder.PreInstalledUtils.SubItemAdapter;
 import caruso.nicholas.com.formbuilder.PreInstalledUtils.SubItemFragment;
-import caruso.nicholas.com.formbuilder.R;
 import caruso.nicholas.com.formbuilder.Validation;
 import caruso.nicholas.com.formbuilder.helper_functions.OnPageChangeSelectedListener;
 import caruso.nicholas.com.formbuilder.helper_functions.WrapViewPager;
 import caruso.nicholas.com.itm_database.Item;
-import corps.technology.diversified.workorder.R;
-import corps.technology.diversified.workorder.forms.FromUtils.DataBox;
-import corps.technology.diversified.workorder.forms.FromUtils.SubItemAdapter;
-import corps.technology.diversified.workorder.forms.FromUtils.SubItemFragment;
-import corps.technology.diversified.workorder.forms.FromUtils.Validation;
-import corps.technology.diversified.workorder.helper_functions.OnPageChangeSelectedListener;
-import corps.technology.diversified.workorder.helper_functions.WrapViewPager;
 
 /**
  * Nick:3/1/2018
@@ -212,13 +204,13 @@ public class PagerPlugin {
                 return XofY;
             }
         }
-        return fragment.getString(R.string.item_x_of_y);
+        return fragment.getString(0); //R.string.item_x_of_y;
     }
 
     public static final class PagerObject implements Serializable {
-        public int pager_left = R.id.pager_left;
-        public int pager_right = R.id.pager_right;
-        public int pager_text_view = R.id.pager_current_page;
+        public int pager_left = 0;//R.id.pager_left;
+        public int pager_right = 0;//R.id.pager_right;
+        public int pager_text_view = 0;//R.id.pager_current_page;
         public String XofYString;
         public String no_item;
 
